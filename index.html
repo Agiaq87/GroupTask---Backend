@@ -3,12 +3,53 @@
 <head>
 <title>Group Task</title>
 <link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/loginModal.css">
+<link rel="stylesheet" type="text/css" href="/assets/fontAwesome/css/all.min.css"> <!--load all styles -->
 </head>
-<body>
+<body class="center">
 
-<div class="margin_img">
-    <img src="assets/img/GroupTask.png">
+<div class="center" >
+    <img src="/assets/img/GroupTask.png" />
 </div>
 
+<!-- Login Modal -->
+<div id="id01" class="modal">
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="/assets/img/GroupTask.png" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+          <div class="center">
+                <!-- <label for="uname"><b>Username</b></label> -->
+                <div class="center">
+                    <i class="fas fa-envelope" ></i>
+                    <input type="text" placeholder="Mail" name="uname" required>
+                </div>
+        
+                <!-- <label for="psw"><b>Password</b></label> -->
+                <input type="password" placeholder="Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+                <input type="checkbox" checked="checked" name="remember"> Ricordami
+                </label>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        
+          
+        
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <!-- <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> -->
+        
+      </div>
+    </form>
+  </div>
+  <!-- Login Modal -->
+
+  <script src="/javascript/loginModal.js"></script>
 </body>
 </html>

@@ -1,3 +1,22 @@
-.margin_img {
-    margin: 2em;
+.margin {
+    margin: 1em;
 }
+
+.padding {
+    padding: 1em;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+  }
+
+  
