@@ -5,6 +5,8 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 <link rel="stylesheet" type="text/css" href="/css/loginModal.css">
 <link rel="stylesheet" type="text/css" href="/assets/fontAwesome/css/all.min.css"> <!--load all styles -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gudea">
+<meta charset="utf-8" />
 </head>
 <body class="center">
 
@@ -23,10 +25,7 @@
       <div class="container">
           <div class="center">
                 <!-- <label for="uname"><b>Username</b></label> -->
-                <div class="center">
-                    <i class="fas fa-envelope" ></i>
-                    <input type="text" placeholder="Mail" name="uname" required>
-                </div>
+                <input id="uname" type="text" placeholder="Mail" name="uname" required onfocusout="validateEmail()">
         
                 <!-- <label for="psw"><b>Password</b></label> -->
                 <input type="password" placeholder="Password" name="psw" required>
@@ -42,14 +41,14 @@
         
       </div>
   
-      <div class="container" style="background-color:#f1f1f1">
-        <!-- <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> -->
+      <div class="container">
         
       </div>
     </form>
   </div>
   <!-- Login Modal -->
-
+  <script src="/javascript/ajax.js"></script>
   <script src="/javascript/loginModal.js"></script>
+  <script src="/javascript/checkUser.js"></script>
 </body>
 </html>
