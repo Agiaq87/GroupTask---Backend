@@ -9,7 +9,7 @@ if ( isset($_GET['type']) ) {
     switch ( $_GET['type'] ) {
         case 'email': {
             if ( $_GET['action'] == 'select' ) {
-                echo json_encode($conn->query('SELECT * FROM utente WHERE mail = "'.$_GET['value'].'"')->num_rows);
+                echo json_encode($conn->query('SELECT * FROM user WHERE mail = "'.$_GET['value'].'"')->num_rows);
             }
         break;
         }
